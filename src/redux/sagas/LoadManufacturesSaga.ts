@@ -1,14 +1,14 @@
 import { takeLatest, call, put } from "redux-saga/effects";
-import { LOAD_MANUFACTURES } from "../../types/actions";
-import { loadManufactures } from "../../api";
-import { setManufactures } from "../actions/manufactures";
+
+import { GET_MANUFACTURES } from "../../types/actions";
+import { getManufactures } from "../../api";
+import { setManufactures } from "../actions/manufactureActions";
 
 export function* loadManufacturesWatcher() {
-  yield takeLatest(LOAD_MANUFACTURES, loadManufacturesFlow);
+  yield takeLatest(GET_MANUFACTURES, loadManufacturesFlow);
 }
 
 function* loadManufacturesFlow() {
-  const manufactures = yield call(loadManufactures);
-  console.log("----", manufactures);
+  const manufactures = yield call(getManufactures);
   yield put(setManufactures(manufactures));
 }

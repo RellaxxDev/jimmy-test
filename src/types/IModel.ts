@@ -1,7 +1,6 @@
 import { ITableData } from "./ITableData";
 
-export interface IManufacture extends ITableData {
+export interface IModel extends ITableData {
   id: string;
   name: string;
-  country: string;
 }

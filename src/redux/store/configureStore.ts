@@ -3,10 +3,12 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import createSagaMiddleware from "redux-saga";
 
 import { manufactureReducer } from "../reducer/manufactureReducer";
+import { modelReducer } from "../reducer/modelReducer";
 import rootSaga from "../sagas";
 
 export const rootReducer = combineReducers({
-  manufactures: manufactureReducer
+  manufactures: manufactureReducer,
+  models: modelReducer
 });
 
 const composeEnhancers = composeWithDevTools({});

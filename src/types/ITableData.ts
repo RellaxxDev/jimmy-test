@@ -1,5 +1,4 @@
 export interface ITableData {
-  id: number;
-  name: string;
-  country: string;
+  id: string;
+  [key: string]: any;
 }
