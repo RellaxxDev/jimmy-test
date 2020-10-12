@@ -21,6 +21,7 @@ Structure:
     - types        - project types
     
 Assignment:
+
 A web application with a list of vehicle manufacturers which I can click on to see them in detail.
 The whole application is utilising publicly accessible data https://vpic.nhtsa.dot.gov/api/ .
 The list of manufacturers is an infinity loading table with these columns: ID, common name and country. Besides that there's an additional column with a button which leads to the detail page.
