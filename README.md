@@ -12,10 +12,10 @@ Run npm i command to install packages.
 
 Structure:
     
-    - pages        - _container wrappers_
-    - containers   - _decorators with some logic, that are sending components to render_
-    - components   - _components without redux connection_
-    - routes       - _routing structure_
-    - redux        - _redux store infrastructure_
-    - api          - _api data request implementation_
-    - types        - _project types_
+    - pages        - container wrappers
+    - containers   - decorators with some logic, that are sending components to render
+    - components   - components without redux connection
+    - routes       - routing structure
+    - redux        - redux store infrastructure
+    - api          - api data request implementation
+    - types        - project types
