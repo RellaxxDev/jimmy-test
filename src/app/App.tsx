@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import { store } from "../redux/store/configureStore";
 import AppRouter from "../router";
 
-const GlobalAlertAntdStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -17,7 +17,7 @@ const GlobalAlertAntdStyles = createGlobalStyle`
 
 const App: React.FunctionComponent = () => (
   <Provider store={store}>
-    <GlobalAlertAntdStyles />
+    <GlobalStyles />
     <AppRouter />
   </Provider>
 );
